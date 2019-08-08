@@ -127,9 +127,11 @@ def adding_to_dennis
           :languages => ["Smalltalk", "LISP"]
         },
         :dennis_ritchie => {
-          :known_for => ["Unix","Assembly"],
+          :known_for => "Unix",
           :languages => ["C"]
         }
      }
+     
+  return programmer_hash[:dennis_ritchie][:known_for] << "Assembly"
 
 end
